@@ -13,6 +13,6 @@ A HAL_Generation module generates a file "TimerHAL_cfg.h", which contains macros
 The main drawback to HAL is extra code that must be written. Writing a HAL_Generation file is tidious and time consuming. But once it is written, you never need to deal with the hardware implementation again.
 
 ## Example
-The "HalGenerator" program reads the command line arguments creates the needed macros in the "Timer_HAL_cfg.h" files.
+The "HalGenerator" program reads the command line arguments and creates the needed macros in the "Timer_HAL_cfg.h" files.
 
 ![Example execution](/images/terminal_example.PNG)
