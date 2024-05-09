@@ -7,11 +7,12 @@ Using the chip's hardware features (ports/DAC/ADC/timers/uart/interrupts/etc.) r
 ## How does it work
 A HAL_Generation module generates a file "TimerHAL_cfg.h", which contains macros that either deactive or active certain microcontroller features. The microcontroller is then instantiated according to the macros at compile time. Note that the various features of the Microcontroll (ports/DAC/ADC/timers/uart/etc.) are contained in the various .h files you have already written for your microcontroller.
 
-
-
 ![General_Idea](/images/HAL_about.PNG)
 
-## Drawback
+## Drawbacks of HAL
 The main drawback to HAL is extra code that must be written. Writing a HAL_Generation file is tidious and time consuming. But once it is written, you never need to deal with the hardware implementation again.
+
+## Example
+The "HalGenerator" program reads the command line arguments creates the needed macros in the "Timer_HAL_cfg.h" files.
 
 ![Example execution](/images/terminal_example.PNG)
